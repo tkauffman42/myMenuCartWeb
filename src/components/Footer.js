@@ -8,15 +8,10 @@ function Footer() {
             <div className="footer-container">
                 <div className="footer-section">
                     <h3>MyMenuCart</h3>
-                    <p>Simplify your restaurant experience with our menu and ordering app.</p>
+                    <p>Simplify your meal planning and ordering with our app.</p>
                 </div>
 
                 <div className="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/legal">Legal</Link></li>
-                    </ul>
                 </div>
 
                 <div className="footer-section">

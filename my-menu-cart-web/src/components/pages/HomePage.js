@@ -60,10 +60,6 @@ function HomePage() {
                             </div>
                         </div>
                         <button className="gallery-nav next" onClick={nextImage}>&gt;</button>
-                        <div className="screenshot-caption">
-                            <h3>{screenshots[currentImageIndex].title}</h3>
-                            <p>{screenshots[currentImageIndex].description}</p>
-                        </div>
                         <div className="screenshot-dots">
                             {screenshots.map((_, index) => (
                                 <button
@@ -75,7 +71,13 @@ function HomePage() {
                         </div>
                     </div>
                     <div className="app-description">
-                        <p>MyMenuCart connects with your Kroger account to seamlessly plan meals, create shopping lists, and order groceries - all in one place!</p>
+                        <div className="feature-details">
+                            <h3>{screenshots[currentImageIndex].title}</h3>
+                            <p>{screenshots[currentImageIndex].description}</p>
+                        </div>
+                        <div className="app-summary">
+                            <p>MyMenuCart connects with your Kroger account to seamlessly plan meals, create shopping lists, and order groceries - all in one place!</p>
+                        </div>
                     </div>
                 </div>
             </div>

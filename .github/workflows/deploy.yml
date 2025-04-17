@@ -1,47 +1,39 @@
 name: Deploy to GitHub Pages
-
-on:
+'on':
   push:
     branches:
-      - main # or master, depending on your default branch name
-  workflow_dispatch:
-
+      - main
+  workflow_dispatch: null
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:      
-    - name: Checkout repository
+    steps:
+      - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'npm'
+          cache: npm
           cache-dependency-path: ./package-lock.json
-
       - name: Install dependencies
         run: npm ci
-
       - name: Build project
         run: npm run build
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
-
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: '${{ steps.deployment.outputs.page_url }}'
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

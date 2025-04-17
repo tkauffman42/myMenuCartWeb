@@ -16,27 +16,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
+        uses: actions/checkout@v4      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'npm'
-          cache-dependency-path: ./my-menu-cart-web/package-lock.json
+          cache-dependency-path: ./package-lock.json
 
       - name: Install dependencies
-        working-directory: ./my-menu-cart-web
         run: npm ci
 
       - name: Build project
-        working-directory: ./my-menu-cart-web
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./my-menu-cart-web/build
+          path: ./build
 
   deploy:
     environment:

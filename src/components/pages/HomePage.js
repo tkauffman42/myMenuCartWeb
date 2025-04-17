@@ -47,31 +47,34 @@ function HomePage() {
 
             <div className="app-preview-section">
                 <h2>Simplify Your Meal Planning</h2>
-                <div className="app-preview">
-                    <div className="app-screenshot">
-                        <button className="gallery-nav prev" onClick={prevImage}>&lt;</button>
-                        <div className="phone-frame">
-                            <div className="screenshot-container">
-                                <img
-                                    src={screenshots[currentImageIndex].image}
-                                    alt={screenshots[currentImageIndex].title}
-                                    className="screenshot-image"
-                                />
-                            </div>
-                        </div>
-                        <button className="gallery-nav next" onClick={nextImage}>&gt;</button>
-                        <div className="screenshot-dots">
-                            {screenshots.map((_, index) => (
-                                <button
-                                    key={index}
-                                    className={`dot ${index === currentImageIndex ? 'active' : ''}`}
-                                    onClick={() => setCurrentImageIndex(index)}
-                                />
-                            ))}
+                <div className="app-preview">                    <div className="app-screenshot">
+                    <button className="gallery-nav prev" onClick={prevImage}>&lt;</button>
+                    <div className="phone-frame">
+                        <div className="screenshot-container">
+                            <img
+                                src={screenshots[currentImageIndex].image}
+                                alt={screenshots[currentImageIndex].title}
+                                className="screenshot-image"
+                            />
                         </div>
                     </div>
+                    <button className="gallery-nav next" onClick={nextImage}>&gt;</button>
+                    <div className="screenshot-dots">
+                        {screenshots.map((_, index) => (
+                            <button
+                                key={index}
+                                className={`dot ${index === currentImageIndex ? 'active' : ''}`}
+                                onClick={() => setCurrentImageIndex(index)}
+                            />
+                        ))}
+                    </div>
+                    <div className="mobile-feature-details">
+                        <h3>{screenshots[currentImageIndex].title}</h3>
+                        <p>{screenshots[currentImageIndex].description}</p>
+                    </div>
+                </div>
                     <div className="app-description">
-                        <div className="feature-details">
+                        <div className="feature-details desktop-feature-details">
                             <h3>{screenshots[currentImageIndex].title}</h3>
                             <p>{screenshots[currentImageIndex].description}</p>
                         </div>

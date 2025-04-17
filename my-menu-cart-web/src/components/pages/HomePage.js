@@ -1,25 +1,77 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './HomePage.css';
 
 function HomePage() {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const screenshots = [
+        {
+            image: '/appScreenshots/recipes.jpg',
+            title: 'Recipe Management',
+            description: 'Browse and manage your favorite recipes easily'
+        },
+        {
+            image: '/appScreenshots/addIngredients.jpg',
+            title: 'Add Ingredients',
+            description: 'Quickly add ingredients to your shopping list'
+        },
+        {
+            image: '/appScreenshots/regularorder.jpg',
+            title: 'Regular Orders',
+            description: 'Access your frequently ordered items'
+        },
+        {
+            image: '/appScreenshots/shoppinglist.jpg',
+            title: 'Shopping List',
+            description: 'View and manage your shopping list'
+        }
+    ];
+
+    const nextImage = () => {
+        setCurrentImageIndex((prev) => (prev + 1) % screenshots.length);
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prev) => (prev - 1 + screenshots.length) % screenshots.length);
+    };
+
     return (
         <div className="home-page">
             <div className="hero-section">
                 <h1>Welcome to MyMenuCart</h1>
                 <p>Your all-in-one meal planning and grocery shopping assistant</p>
                 <div className="cta-buttons">
-                    <button className="cta-button">Download iOS App</button>                </div>
+                    <button className="cta-button">Download iOS App</button>
+                </div>
             </div>
 
             <div className="app-preview-section">
                 <h2>Simplify Your Meal Planning</h2>
                 <div className="app-preview">
                     <div className="app-screenshot">
+                        <button className="gallery-nav prev" onClick={prevImage}>&lt;</button>
                         <div className="phone-frame">
-                            {/* Placeholder for app screenshot */}
-                            <div className="screenshot-placeholder">
-                                <i className="app-icon">📱</i>
+                            <div className="screenshot-container">
+                                <img
+                                    src={screenshots[currentImageIndex].image}
+                                    alt={screenshots[currentImageIndex].title}
+                                    className="screenshot-image"
+                                />
                             </div>
+                        </div>
+                        <button className="gallery-nav next" onClick={nextImage}>&gt;</button>
+                        <div className="screenshot-caption">
+                            <h3>{screenshots[currentImageIndex].title}</h3>
+                            <p>{screenshots[currentImageIndex].description}</p>
+                        </div>
+                        <div className="screenshot-dots">
+                            {screenshots.map((_, index) => (
+                                <button
+                                    key={index}
+                                    className={`dot ${index === currentImageIndex ? 'active' : ''}`}
+                                    onClick={() => setCurrentImageIndex(index)}
+                                />
+                            ))}
                         </div>
                     </div>
                     <div className="app-description">

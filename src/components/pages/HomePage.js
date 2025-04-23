@@ -130,7 +130,7 @@ function HomePage() {
                     <div className="step">
                         <div className="step-number">2</div>
                         <h3>Plan Your Meals</h3>
-                        <p>Create, import, or discover recipes and organize them into meals</p>
+                        <p>Create, import, or discover recipes</p>
                     </div>
                     <div className="step">
                         <div className="step-number">3</div>

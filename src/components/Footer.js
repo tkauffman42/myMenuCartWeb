@@ -15,8 +15,7 @@ function Footer() {
 
                 <div className="footer-section">
                     <h3>Contact</h3>
-                    <p>Email: info@mymenucart.com</p>
-                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: admin@mymenucart.com</p>
                 </div>
             </div>
 

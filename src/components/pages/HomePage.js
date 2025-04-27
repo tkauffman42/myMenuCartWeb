@@ -83,40 +83,38 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="features-section">
+            </div>            <div className="features-section">
                 <h2>Key Features</h2>
                 <div className="features-grid">
                     <div className="feature-card">
                         <div className="feature-icon">📖</div>
                         <h3>Recipe Management</h3>
-                        <p>Save recipes from the web, scan them with your camera, or create your own</p>
+                        <p>Save recipes from the web with our share extension, scan them using your camera, or create your own</p>
                     </div>
                     <div className="feature-card">
                         <div className="feature-icon">🍽️</div>
                         <h3>Meal Planning</h3>
-                        <p>Create customizable meal options with main dishes and sides</p>
+                        <p>Create customizable meals with main dishes and sides that sync with your shopping list</p>
                     </div>
                     <div className="feature-card">
                         <div className="feature-icon">⭐</div>
-                        <h3>Regularly Ordered Items</h3>
-                        <p>Save time by adding your go-to products with just a tap</p>
+                        <h3>My Favorites</h3>
+                        <p>Save time by adding your regularly purchased items to your lists with just a tap</p>
                     </div>
                     <div className="feature-card">
                         <div className="feature-icon">🛒</div>
-                        <h3>Shopping List</h3>
-                        <p>Automatically add ingredients to your Kroger cart for pickup or delivery</p>
+                        <h3>Kroger Integration</h3>
+                        <p>Search Kroger products, add ingredients to your cart, and organize pickup or delivery</p>
                     </div>
                     <div className="feature-card">
-                        <div className="feature-icon">📅</div>
-                        <h3>Calendar Integration</h3>
-                        <p>Plan your meals by day and add them to a calendar for all to see</p>
+                        <div className="feature-icon">📝</div>
+                        <h3>Reminders Integration</h3>
+                        <p>Export your shopping list to iOS Reminders for convenient in-store shopping</p>
                     </div>
                     <div className="feature-card">
-                        <div className="feature-icon">📲</div>
-                        <h3>Share & Import</h3>
-                        <p>Share recipes and import them directly from your browser</p>
+                        <div className="feature-icon">📱</div>
+                        <h3>Share & Discover</h3>
+                        <p>Share recipes with friends and discover new meals from other users</p>
                     </div>
                 </div>
             </div>
@@ -132,7 +130,7 @@ function HomePage() {
                     <div className="step">
                         <div className="step-number">2</div>
                         <h3>Plan Your Meals</h3>
-                        <p>Create, import, or discover recipes and organize them into meals</p>
+                        <p>Create, import, or discover recipes</p>
                     </div>
                     <div className="step">
                         <div className="step-number">3</div>

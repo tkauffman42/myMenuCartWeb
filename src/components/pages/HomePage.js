@@ -41,7 +41,7 @@ function HomePage() {
                 <h1>Welcome to MyMenuCart</h1>
                 <p>Your all-in-one meal planning and grocery shopping assistant</p>
                 <div className="cta-buttons">
-                    <button className="cta-button">Download iOS App</button>
+                    <button className="cta-button">Coming soon!</button>
                 </div>
             </div>
 

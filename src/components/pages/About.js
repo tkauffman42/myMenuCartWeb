@@ -10,7 +10,7 @@ function About() {
             <h2>Hello, I'm Troy!</h2>
             <p>
               Welcome to MyMenuCart! If you are here, I want to say thank you. I am sure there are a lot of other options out there. 
-              If you are here, I hope you find this app useful and as enjoyable as I do.
+              I hope you find this app as useful and enjoyable as I do.
             </p>
             
             <p>

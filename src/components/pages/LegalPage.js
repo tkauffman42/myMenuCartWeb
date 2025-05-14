@@ -25,7 +25,7 @@ function LegalPage() {
                     At MyMenuCart, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.
                 </p>
                 <p>
-                    <strong>Information We Collect:</strong> We collect information you provide directly to us, such as your recipe data, meal plans, shopping lists, and Kroger account connection information (through secure OAuth). Our app may also request access to your device's camera for recipe scanning and iOS Reminders for shopping list integration.
+                    <strong>Information We Collect:</strong> We collect information you provide directly to us, such as your name, recipe data, meal plans, shopping lists, and Kroger account connection information (through secure OAuth). We collect name data solely for analytics purposes to improve our service and user experience. Our app may also request access to your device's camera for recipe scanning and iOS Reminders for shopping list integration.
                 </p>
                 <p>
                     <strong>How We Use Your Information:</strong> We use your information to provide our meal planning and grocery shopping services, synchronize your recipes with your shopping list, connect with Kroger's systems for product lookup and ordering, and improve our services. With your permission, we may access your camera to scan recipes and your iOS Reminders to create grocery lists.
@@ -62,20 +62,22 @@ function LegalPage() {
             </section>
 
             <section className="legal-section">
-                <h2>Copyright Notice</h2>
+                <h2>Food Safety & Allergies</h2>
                 <p>
-                    © {new Date().getFullYear()} MyMenuCart. All rights reserved. The content, design, graphics, and other materials on this application are protected by copyright and other intellectual property rights.
+                    MyMenuCart provides recipe information and ingredient lists as a convenience to users. However, we are not responsible for any allergic reactions or food safety issues that may arise from the use of our application or the preparation of recipes found within it.
+                </p>
+                <p>
+                    Users with food allergies or dietary restrictions should carefully verify all ingredient information and not rely solely on information provided through the MyMenuCart application. Ingredient information from Kroger or other sources may not be complete or may change without notice. Always check product packaging for the most accurate and up-to-date allergen information.
+                </p>
+                <p>
+                    MyMenuCart does not guarantee the accuracy of allergen information, nutritional data, or ingredient lists in recipes shared through our platform.
                 </p>
             </section>
 
             <section className="legal-section">
-                <h2>Contact Us</h2>
+                <h2>Copyright Notice</h2>
                 <p>
-                    If you have any questions about our legal policies, please contact us at:
-                </p>
-                <p>
-                    Email: legal@mymenucart.com<br />
-                    Address: 123 App Street, Mobile, AL 36608
+                    © {new Date().getFullYear()} MyMenuCart. All rights reserved. The content, design, graphics, and other materials on this application are protected by copyright and other intellectual property rights.
                 </p>
             </section>
         </div>

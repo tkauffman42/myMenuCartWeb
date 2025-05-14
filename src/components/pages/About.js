@@ -9,42 +9,43 @@ function About() {
           <div className="about-content">
             <h2>Hello, I'm Troy!</h2>
             <p>
-              Welcome to MyMenuCart! If you are here, I want to say thank you. I am sure there are a lot of other options out there. 
+              Welcome to MyMenuCart! If you are here, I want to say thank you. I am sure there are a lot of other options out there.
               I hope you find this app as useful and enjoyable as I do.
             </p>
-            
+
             <p>
-              This journey began a long time ago when my beautiful wife and I were constantly struggling with coming up with a grocery list with our two children running around.
-              We would spend over an hour planning, searching, checking the pantry, and then finally placing an order, only to miss something or not get to a meal quickly enough and the groceries would expire. 
+              This journey began a long time ago when my beautiful wife and I were constantly struggling to create grocery lists while our two children ran around.
+              We would spend over an hour planning, searching, checking the pantry, and then finally placing an order. Often, we would miss something or not use ingredients quickly enough, and groceries would expire.
               My wife constantly mentioned how much she disliked
-              everything about the process. I knew there had to be a better way. 
+              everything about the process. I knew there had to be a better way.
             </p>
-            
+
             <h3>My Vision</h3>
             <p>
-              I believe meal planning should be simple, efficient, and even fun. MyMenuCart helps 
-              you organize recipes, create shopping lists automatically, and save time and money 
-              on groceries. My goal is to help you spend less time planning and shopping, and more 
+              I believe meal planning should be simple, efficient, and even fun. MyMenuCart helps
+              you organize recipes, create shopping lists automatically, and save time and money
+              on groceries. My goal is to help you spend less time planning and shopping, and more
               time enjoying meals with the people you love.
             </p>
-            
+
             <h3>Thank You to My Testers</h3>
             <p>
-              I want to say thank you to everyone who used early versions of MyMenuCart and provided feedback. 
-              Your willingness to work through bugs and share your thoughts on how to make the app better 
+              I want to say thank you to everyone who used early versions of MyMenuCart and provided feedback.
+              Your willingness to work through bugs and share your thoughts on how to make the app better
               was incredibly helpful. None of this would be possible without your help.
             </p>
-            <h3>Thank you Mom</h3>
+            <h3>Thank You, Mom</h3>
             <p>
-              The biggest thank you goes to my mom.  She has been beside me through this entire process. She was the first
-                person to test the app and provide feedback. She believed in the vision and helped me push through the days that I thought it wasn't worth it.
-                She's been the one who I could always talk tech to, bounce ideas, send countless screenshots and screen recording late at night and she would always respond. 
-                
-                She has been an inspiration to me, that you can really do anything you set your mind to.
+              The biggest thank you goes to my mom. She has been beside me through this entire process. She was the first
+              person to test the app and provide feedback. She believed in the vision and helped me push through the days that I thought it wasn't worth it.
+            </p>
+            <p>
+              She's been the one I could always talk tech to, bounce ideas off of, and send countless screenshots and screen recordings to late at night—and she would always respond.
+              She has been an inspiration to me. She taught me that you can really do anything you set your mind to.
             </p>
           </div>
         </div>
-        
+
         <div className="app-features">
           <h2>About MyMenuCart</h2>
           <div className="features-grid">

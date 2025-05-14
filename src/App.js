@@ -7,8 +7,11 @@ import LegalPage from './components/pages/LegalPage';
 import About from './components/pages/About';
 
 function App() {
+  // Get the base URL from the homepage in package.json or default to '/'
+  const basename = process.env.PUBLIC_URL || '';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <Navigation />
         <main className="main-content">

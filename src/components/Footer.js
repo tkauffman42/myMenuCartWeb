@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
@@ -8,9 +9,10 @@ function Footer() {
                 <div className="footer-section">
                     <h3>MyMenuCart</h3>
                     <p>Simplify your meal planning and ordering with our app.</p>
-                </div>
-
-                <div className="footer-section">
+                </div>                <div className="footer-section">                    <h3>Links</h3>
+                    <ul>
+                        <li><Link to="/legal">Legal Information</Link></li>
+                    </ul>
                 </div>
 
                 <div className="footer-section">

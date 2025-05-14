@@ -67,6 +67,17 @@ function LegalPage() {
                     © {new Date().getFullYear()} MyMenuCart. All rights reserved. The content, design, graphics, and other materials on this application are protected by copyright and other intellectual property rights.
                 </p>
             </section>
+
+            <section className="legal-section">
+                <h2>Contact Us</h2>
+                <p>
+                    If you have any questions about our legal policies, please contact us at:
+                </p>
+                <p>
+                    Email: legal@mymenucart.com<br />
+                    Address: 123 App Street, Mobile, AL 36608
+                </p>
+            </section>
         </div>
     );
 }

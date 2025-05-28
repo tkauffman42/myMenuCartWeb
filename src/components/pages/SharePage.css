@@ -41,6 +41,12 @@
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
+  transition: all 0.3s;
+}
+
+.recipe-time:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(114, 199, 179, 0.2);
 }
 
 .recipe-url {
@@ -60,6 +66,7 @@
 .recipe-url a:hover {
   color: #62b7a3;
   transform: translateY(-2px);
+  display: inline-block;
 }
 
 .recipe-ingredients-section,
@@ -74,35 +81,82 @@
 
 .recipe-ingredients-section:hover,
 .recipe-directions-section:hover {
-  box-shadow: 0 6px 14px rgba(114, 199, 179, 0.2);
-  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(114, 199, 179, 0.2);
+  transform: translateY(-10px);
 }
 
 .recipe-ingredient-list {
-  padding-left: 20px;
-  list-style-type: disc;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .recipe-ingredient-item {
   margin-bottom: 12px;
-  padding-left: 5px;
+  padding: 8px 12px;
   color: #555;
+  transition: all 0.2s;
+  border-left: 3px solid rgba(114, 199, 179, 0.4);
+  background-color: rgba(114, 199, 179, 0.05);
+  border-radius: 4px;
+}
+
+.recipe-ingredient-item:hover {
+  color: #333;
+  transform: translateX(3px);
+  border-left-color: rgba(114, 199, 179, 1);
 }
 
 .recipe-direction-list {
-  padding-left: 25px;
-  list-style-type: decimal;
+  padding-left: 0;
+  list-style-type: none;
+  counter-reset: direction-counter;
 }
 
 .recipe-direction-item {
   margin-bottom: 18px;
-  padding-bottom: 12px;
+  padding: 0 0 12px 40px;
   color: #555;
   line-height: 1.8;
+  transition: all 0.2s;
+  position: relative;
 }
 
-.recipe-direction-item:not(:last-child) {
-  border-bottom: 1px solid rgba(114, 199, 179, 0.2);
+.recipe-direction-item:before {
+  counter-increment: direction-counter;
+  content: counter(direction-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 28px;
+  width: 28px;
+  background-color: #72c7b3;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.recipe-direction-item:hover {
+  color: #333;
+}
+
+/* Loading state styling */
+.share-page-loading {
+  text-align: center;
+  padding: 50px;
+  color: #72c7b3;
+  font-size: 1.2rem;
+}
+
+.share-page-error {
+  text-align: center;
+  padding: 50px;
+  color: #e74c3c;
+  font-size: 1.2rem;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 8px;
 }
 
 /* Responsive styles */

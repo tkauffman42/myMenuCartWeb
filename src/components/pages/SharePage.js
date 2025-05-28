@@ -6,10 +6,12 @@ const SharePage = () => {
   const { recipeId } = useParams();
   const [recipeData, setRecipeData] = useState(null);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
+        setLoading(true);
         const response = await fetch(`https://menu-api-kappa.vercel.app/api/utilities/web?recipeId=${recipeId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch recipe data');
@@ -21,6 +23,8 @@ const SharePage = () => {
         setRecipeData(data);
       } catch (err) {
         setError(err.message);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -29,12 +33,12 @@ const SharePage = () => {
     }
   }, [recipeId]);
 
-  if (error) {
-    return <div>Error: {error}</div>;
+  if (loading) {
+    return <div className="share-page-loading">Loading recipe details...</div>;
   }
 
-  if (!recipeData) {
-    return <div>Loading...</div>;
+  if (error) {
+    return <div className="share-page-error">Error: {error}</div>;
   }
 
   // Parse instructions from JSON string

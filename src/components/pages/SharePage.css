@@ -1,0 +1,21 @@
+.share-page-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.share-page-container h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.share-page-container pre {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 4px;
+  white-space: pre-wrap; /* Ensures long lines wrap */
+  word-wrap: break-word; /* Breaks words if necessary */
+  font-size: 0.9em;
+  color: #333;
+}

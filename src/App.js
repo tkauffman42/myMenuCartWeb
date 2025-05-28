@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import HomePage from './components/pages/HomePage';
 import LegalPage from './components/pages/LegalPage';
 import About from './components/pages/About';
+import SharePage from './components/pages/SharePage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/legal" element={<LegalPage />} />
             <Route path="/about" element={<About />} />
+            <Route path="/share/:recipeId" element={<SharePage />} />
           </Routes>
         </main>
         <Footer />

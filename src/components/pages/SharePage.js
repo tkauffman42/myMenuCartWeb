@@ -72,7 +72,11 @@ const SharePage = () => {
           <ul className="recipe-ingredient-list">
             {recipeData.ingredients.map((ingredient, index) => (
               <li key={index} className="recipe-ingredient-item">
-                {ingredient.Original}
+                {ingredient.Original ? ingredient.Original : 
+                  ingredient.Unit && ingredient.Unit !== "" ? 
+                    `${ingredient.Amount} ${ingredient.Unit} ${ingredient.Ingredient}` : 
+                    `${ingredient.Amount} ${ingredient.Ingredient}`
+                }
               </li>
             ))}
           </ul>

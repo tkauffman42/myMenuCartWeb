@@ -6,6 +6,7 @@ import HomePage from './components/pages/HomePage';
 import LegalPage from './components/pages/LegalPage';
 import About from './components/pages/About';
 import SharePage from './components/pages/SharePage';
+import Apple from '.public/.well-known/apple-app-site-association';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/legal" element={<LegalPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/share/:recipeId" element={<SharePage />} />
+            <Route path="/.well-known/apple-app-site-association" element={<Apple />} />
           </Routes>
         </main>
         <Footer />

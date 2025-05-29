@@ -4,8 +4,13 @@
       "src": "/.well-known/apple-app-site-association",
       "dest": "/.well-known/apple-app-site-association",
       "headers": {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Cache-Control": "public, max-age=0, must-revalidate"
       }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }

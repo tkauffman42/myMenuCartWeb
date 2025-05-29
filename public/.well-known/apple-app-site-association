@@ -6,8 +6,17 @@
         "appID": "com.tkauffman.MenuMaker",
         "paths": [
           "/share/*"
+        ],
+        "components": [
+          {
+            "/": "/share/*",
+            "comment": "Matches any URL with a path that starts with /share/"
+          }
         ]
       }
     ]
+  },
+  "webcredentials": {
+    "apps": ["com.tkauffman.MenuMaker"]
   }
 }
